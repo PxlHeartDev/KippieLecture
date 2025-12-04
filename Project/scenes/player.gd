@@ -1,8 +1,12 @@
 extends CharacterBody2D
 
+@onready var health_component: Node = $HealthComponent
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
+
+func _ready() -> void:
+	health_component.died.connect(died)
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -22,3 +26,6 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+
+func died() -> void:
+	print("omg the player has died")

@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://ctaqj2ugemke7"]
+[gd_scene load_steps=5 format=3 uid="uid://ctaqj2ugemke7"]
 
 [ext_resource type="Texture2D" uid="uid://hv32uqmgy58b" path="res://icon.svg" id="1_3vyb7"]
 [ext_resource type="Script" uid="uid://migjxyope1xc" path="res://scenes/player.gd" id="1_g2els"]
+[ext_resource type="PackedScene" uid="uid://bof3378r34seu" path="res://scenes/components/health_component.tscn" id="3_qhqgy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g2els"]
 size = Vector2(128, 128)
@@ -14,3 +15,5 @@ texture = ExtResource("1_3vyb7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_g2els")
+
+[node name="HealthComponent" parent="." instance=ExtResource("3_qhqgy")]
