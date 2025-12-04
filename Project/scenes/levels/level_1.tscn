@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://depfxl26qrfva"]
+
+[ext_resource type="PackedScene" uid="uid://ctaqj2ugemke7" path="res://scenes/player.tscn" id="1_ksju7"]
+[ext_resource type="Texture2D" uid="uid://capuvww2ir4id" path="res://background.jpg" id="1_nsrm0"]
+[ext_resource type="PackedScene" uid="uid://kvshsvnc8uf0" path="res://scenes/objects/platform.tscn" id="2_6iamk"]
+
+[node name="Level1" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(595.00006, 332)
+scale = Vector2(0.66523623, 0.66523623)
+texture = ExtResource("1_nsrm0")
+
+[node name="Player" parent="." instance=ExtResource("1_ksju7")]
+position = Vector2(271, 196)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+
+[node name="Platform" parent="." instance=ExtResource("2_6iamk")]
+position = Vector2(289, 466)
+
+[node name="Platform2" parent="." instance=ExtResource("2_6iamk")]
+position = Vector2(496, 404)
+
+[node name="Platform3" parent="." instance=ExtResource("2_6iamk")]
+position = Vector2(695, 326)
+
+[node name="Platform4" parent="." instance=ExtResource("2_6iamk")]
+position = Vector2(873, 430)
