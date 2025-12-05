@@ -22,4 +22,14 @@ In this project, I taught a group of young aspiring game devs the ropes of the G
 - Adding a background to the game
 
 # Week 3 - 04/12/25:
-- Ongoing!
+- Refresher on GDScript syntax
+- Quick note on the Godot lifecycle
+- Adding a generic health component to our game
+- Keywords and types in Godot
+- Variables in Godot
+- Colours of text in the IDE
+- Declaring our own functions
+- Parameters in functions
+- Attaching our component to the player
+- Connecting the component signal to a function in the player
+- Difference between signals and functions
