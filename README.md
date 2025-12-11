@@ -33,3 +33,6 @@ In this project, I taught a group of young aspiring game devs the ropes of the G
 - Attaching our component to the player
 - Connecting the component signal to a function in the player
 - Difference between signals and functions
+
+# Week 4 - 11/12/25:
+- Ongoing!
