@@ -35,4 +35,7 @@ In this project, I taught a group of young aspiring game devs the ropes of the G
 - Difference between signals and functions
 
 # Week 4 - 11/12/25:
-- Ongoing!
+- Not many turned up, so:
+- Showed Unity game RACE: A Racing Game
+- Went through the First Person Template
+- Explained export annotations
